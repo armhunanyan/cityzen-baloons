@@ -1,0 +1,15 @@
+.switcher{
+    position: absolute;
+    width: 33px;
+    height: 33px;
+    background-image: url(../../assets/music-on.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    left:5px;
+    top:5px;
+    cursor: pointer;
+
+    &.off{
+        background-image: url(../../assets/music-off.png);
+    }
+}

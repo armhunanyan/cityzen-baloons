@@ -1,13 +1,57 @@
+@font-face {
+  font-family: 'Bokonique-Bold';
+  src: url('./assets/fonts/Bokonique-Bold.eot');
+  src: url('./assets/fonts/Bokonique-Bold.eot?#iefix') format('embedded-opentype'),
+       url('./assets/fonts/Bokonique-Bold.svg#Bokonique-Bold') format('svg'),
+       url('./assets/fonts/Bokonique-Bold.ttf') format('truetype'),
+       url('./assets/fonts/Bokonique-Bold.woff') format('woff'),
+       url('./assets/fonts/Bokonique-Bold.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Bokonique-Regular';
+  src: url('./assets/fonts/Bokonique-Regular.eot');
+  src: url('./assets/fonts/Bokonique-Regular.eot?#iefix') format('embedded-opentype'),
+       url('./assets/fonts/Bokonique-Regular.svg#Bokonique-Regular') format('svg'),
+       url('./assets/fonts/Bokonique-Regular.ttf') format('truetype'),
+       url('./assets/fonts/Bokonique-Regular.woff') format('woff'),
+       url('./assets/fonts/Bokonique-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'fedra';
+  src: url('./assets/fonts/fedra.ttf') format('truetype');
+}
+
 body {
   margin: 0;
+  padding: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+#root{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  max-width: 820px;
+  max-height: 500px;
+  overflow: hidden;
+}
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@media screen and (max-width:819px){
+  #root{
+    max-height: unset;
+  }
+}
+
+@media screen and (max-height:499px){
+  #root{
+    max-width: unset;
+  }
 }

@@ -1,0 +1,145 @@
+.game-over{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+    .road{
+        position: absolute;
+        width: 100%;
+        height: 0;
+        top:auto;
+        bottom:0;
+        left:0;
+        padding-bottom: 47%;
+        background-image: url(../../assets/road3.png);
+        background-size: contain;
+        background-position: bottom;
+        background-repeat: no-repeat;
+    }
+
+    .panel{
+        position: absolute;
+        width: 254px;
+        height: 205px;
+        top:auto;
+        left:auto;
+        right: 50px;
+        top: 90px;
+        background-image: url(../../assets/panel.png);
+        background-size: contain;
+        background-position: bottom;
+        background-repeat: no-repeat;
+
+        .title{
+            text-align: center;
+            width: 97%;
+            position: absolute;
+            color: #fff;
+            text-transform: uppercase;
+            font-weight: bold;
+            top: 50%;
+            font-size: 14px;
+            font-family: 'Bokonique-Bold';
+            letter-spacing: .5px;
+        }
+        .points{
+            text-align: center;
+            width: 97%;
+            position: absolute;
+            color: #fff;
+            text-transform: uppercase;
+            font-weight: bold;
+            top: 66%;
+            font-size: 42px;
+            font-family: 'Bokonique-Bold';
+            letter-spacing: .5px;
+        }
+    }
+
+    .start{
+        position: absolute;
+        text-decoration: unset;
+        color: #fff;
+        font-weight: bold;
+        text-transform: uppercase;
+        left: 12%;
+        font-size: 17px;
+        top: 38%;
+    }
+    .share{
+        position: absolute;
+        text-decoration: unset;
+        color: #fff;
+        font-weight: bold;
+        text-transform: uppercase;
+        font-size: 17px;
+        left: 12%;
+        top: 26%;
+    }
+    .leaderboard-button{
+        position: absolute;
+        top: 14%;
+        font-size: 17px;
+        text-decoration: unset;
+        color: #fff;
+        font-weight: bold;
+        left: 12%;
+        text-transform: uppercase;
+    }
+}
+
+@media screen and (max-width:819px){
+    .game-over{
+        
+        .panel{
+            top: 20px;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+            width: 85%;
+            height: 0;
+            padding-bottom: 70%;
+
+            .title{
+                font-size: 5vw;
+            }
+            .points{
+                font-size: 8vw;
+            }
+        }
+    }
+}
+
+@media screen and (orientation:portrait) and (max-width:819px){
+
+    .game-over{
+
+        .road{
+            width: 200%;
+            padding-bottom: 94%;
+            right:0
+        }
+        .leaderboard-button, .share, .start{
+            font-size: 3.4vw;
+        }
+
+    }
+
+}
+@media screen and (orientation:landscape) and (max-width:819px){
+
+    .game-over{
+
+        .road{
+            width: 100%;
+            padding-bottom: 47%;
+            right:0
+        }
+        .leaderboard-button, .share, .start{
+            font-size: 1.7vw;
+        }
+
+    }
+    
+    
+}

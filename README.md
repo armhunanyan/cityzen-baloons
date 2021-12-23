@@ -1,3 +1,8 @@
+## Demo
+-------
+You can see the live demo [here](https://hunanyan.am/cityzen/)
+
+![Desktop](https://github.com/armhunanyan/cityzen-baloons/blob/main/public/preview.png)
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

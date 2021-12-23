@@ -1,0 +1,105 @@
+.balloons-container{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left:0;
+    top:0;
+
+    .balloon{
+        position: absolute;
+        top:auto;
+        bottom:-150px;
+        left:0;
+        width:48px;
+        height: 143px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: top center;
+        animation: balloon 5s 1 linear;
+        animation-fill-mode: forwards;
+        transform-origin: 24px 30px;
+
+        .visible-part{
+            position: absolute;
+            width: 100%;
+            height: 110px;
+            top:-15px;
+            left:0;
+            right: 0;
+            margin:0 auto;
+            z-index: 2;
+
+            .bum{
+                position: absolute;
+                top:0;
+                left:0;
+                width: 100%;
+                height: 100%;
+                background-image: url(../../assets/bum.png);
+                background-size: contain;
+                background-position: center center;
+                background-repeat: no-repeat;
+                transform-origin: center center;
+                transform:scale(0);
+            }
+        }
+
+        &.animate .bum{
+            animation:bum 105ms 1 linear;
+            animation-fill-mode: forwards;
+        }
+
+        &.red{
+            background-image: url(../../assets/puchik-red.png);
+        }
+        &.yellow{
+            background-image: url(../../assets/puchik-yellow.png);
+        }
+        &.green{
+            background-image: url(../../assets/puchik-green.png);
+        }
+        &.blue{
+            background-image: url(../../assets/puchik-blue.png);
+        }
+    }
+
+    .point-desc{
+        color:#7d7b7b;
+        font-size: 12px;
+        position: absolute;
+        top:-3px;
+        right: -15px;
+        opacity: 0;
+        transition: all .05s;
+    }
+}
+
+@keyframes balloon{
+    0%{
+        transform: translateY(0);
+    }
+    20%{
+        transform: translateY(-160px) rotate(10deg);
+    }
+    40%{
+        transform: translateY(-320px) rotate(0deg);
+    }
+    60%{
+        transform: translateY(-480px) rotate(-10deg);
+    }
+    80%{
+        transform: translateY(-640px) rotate(0deg);
+    }
+    100%{
+        transform: translateY(-800px);
+    }
+}
+
+@keyframes bum{
+    0%{
+        transform:scale(0);
+    }
+    100%{
+        transform:scale(1);
+    }
+}

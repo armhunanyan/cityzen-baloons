@@ -1,0 +1,51 @@
+.header{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+
+    .panel{
+        position: absolute;
+        width: 117px;
+        height: 50px;
+        left:auto;
+        right:15px;
+        background-color:#fff;
+        border-radius: 10px;
+        display: inline-block;
+        line-height: 50px;
+        vertical-align: middle;
+        font-family: 'Bokonique-Bold';
+        text-align: right;
+        padding-right: 15px;
+
+        .clock{
+            position: absolute;
+            width: 33px;
+            height: 45px;
+            background-image: url('../../assets/clock.png');
+            background-size: cover;
+            top:2.5px;
+            left:10px;
+        }
+        .puchik{
+            position: absolute;
+            width: 43px;
+            height: 40px;
+            background-image: url('../../assets/puchik.png');
+            background-size: cover;
+            top:5px;
+            left:10px;
+        }
+
+        &.time{
+            top:20px;
+            font-size: 20px;
+        }
+        &.points{
+            top:80px;
+            font-size: 25px;
+        }
+    }
+}

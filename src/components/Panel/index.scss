@@ -1,0 +1,37 @@
+.color-panel{
+    position: absolute;
+    width: 140px;
+    height: 41px;
+    left:0;
+    right:0;
+    margin:0 auto;
+    border-radius: 10px;
+    border:2px solid white;
+    color:#fff;
+    text-align: center;
+    top:auto;
+    bottom:30px;
+    font-size: 1.8vw;
+    line-height: 37px;
+
+    &.red{
+        background-color: #e10600;
+    }
+    &.yellow{
+        background-color: #ffdb27;
+    }
+    &.green{
+        background-color: #61bf26;
+    }
+
+}
+
+@media screen and (max-width:819px){
+    .color-panel{
+        font-size: 3vw;
+        height: unset;
+        width:15%;
+        line-height: unset;
+        padding: 5px 5px;
+    }
+}
